@@ -1,0 +1,25 @@
+{
+  "name": "tomorrow-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass",
+    "sass": "node-sass -wr styles/main.scss ./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an1413/tomorrow-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/an1413/tomorrow-site/issues"
+  },
+  "homepage": "https://github.com/an1413/tomorrow-site#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
