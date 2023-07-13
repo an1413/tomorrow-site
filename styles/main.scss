@@ -1,11 +1,9 @@
+@import "./constants/colors";
+@import "./constants/typography";
+
 @import "./base/fonts";
 @import "./base/normalize";
 @import "./base/reset";
-p {
-  color: #fff;
-  display: block;
-}
 
-* {
-  font-family: "Noto Sans KR", sans-serif;
-}
+@import "./mixins/text-style";
+@import "./layouts/grids";

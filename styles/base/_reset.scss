@@ -1,11 +1,14 @@
 * {
-  margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
 html {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: $font-main;
+  font-size: $font-size-16;
 }
 
 h1 {
@@ -21,8 +24,8 @@ button,
 input,
 select,
 textarea {
-  border: 0;
   background-color: transparent;
+  border: 0;
 
   &:focus {
     box-shadow: none;
