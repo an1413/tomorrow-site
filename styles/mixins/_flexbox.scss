@@ -1,0 +1,46 @@
+// Map = {}
+
+$flex-map: (
+  start: flex-start,
+  end: flex-end,
+  space-between: between,
+  space-around: around,
+  stretch: stretch,
+  center: center,
+);
+
+@function _get_flex_value($key) {
+  @return map-get($flex-map, $key);
+}
+
+// flex-start -> start
+// flex-end -> end
+// space-between -> between
+// space-around -> around
+// stretch -> stretch
+// center -> center
+@mixin flexbox($jc, $ai) {
+  display: flex;
+  align-items: _get_flex_value($ai);
+  justify-content: _get_flex_value($jc);
+}
+
+@mixin inline-flexbox($jc, $ai) {
+  display: lnline-flex;
+  align-items: _get_flex_value($ai);
+  justify-content: _get_flex_value($jc);
+}
+
+@mixin coloumns-flexbox($jc, $ai) {
+  display: lnline-flex;
+  align-items: _get_flex_value($ai);
+  justify-content: _get_flex_value($jc);
+}
+
+.list {
+  @include flexbox(end, center);
+}
+
+// p {
+//   font-size: _get_flex_value();
+// }
