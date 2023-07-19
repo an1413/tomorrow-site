@@ -1,0 +1,46 @@
+.gnb {
+  // display: absolute;
+  border-bottom: 1px solid $border;
+
+  &-wrapper {
+    // @include flexbox(between, between);
+    display: flex;
+    height: 50px;
+  }
+
+  &-right {
+    .button-group {
+      @include flexbox(end);
+    }
+
+    .gnb-search-button {
+      margin-right: 4px;
+    }
+  }
+
+  &-icon-button {
+    @include flexbox;
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
+    color: $secondary;
+  }
+
+  &-menu-button {
+    color: $blue;
+  }
+
+  .logo {
+    @include pos-center;
+    
+    a {
+      display: block;
+    }
+
+    img {
+      display: block;
+      width: auto;
+      height: 20px;
+    }
+  }
+}
